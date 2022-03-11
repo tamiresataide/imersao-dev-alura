@@ -1,24 +1,19 @@
-var numeroSecreto = (Math.random() * 11).toFixed(0);
+var numeroSecreto = parseInt(Math.random() * 11);
 console.log(numeroSecreto);
 
 function Chutar() {
-  var numeroDoChute = document.getElementById("valor").value;
+  var numeroDoChute = parseInt(document.getElementById("valor").value);
   var chute = parseInt(numeroDoChute);
   var elementoResultado = document.getElementById("resultado");
-  var resultado;
+
 
   if (chute == numeroSecreto) {
-    resultado = "OBA! Você acertou! O número escolhido era o " + numeroSecreto;
-    elementoResultado.innerHTML = resultado;
+    elementoResultado.innerHTML = "OBA! Você acertou! O número escolhido era o " + numeroSecreto;
   } else if (chute > 10 || chute < 0) {
-    resultado =
-      "Opa, parece que esse chute não é válido... digite um número de 1 a 10";
-    elementoResultado.innerHTML = resultado;
+    elementoResultado.innerHTML = "Opa, parece que esse chute não é válido... digite um número de 1 a 10";
   } else if (chute < numeroSecreto) {
-    resultado = "Que pena.... que tal tentar um número maior?";
-    elementoResultado.innerHTML = resultado;
+    elementoResultado.innerHTML = "Que pena.... que tal tentar um número maior";
   } else if (chute > numeroSecreto) {
-    resultado = "Hmmm.... talvez a resposta seja um número menor?";
-    elementoResultado.innerHTML = resultado;
+    elementoResultado.innerHTML = "Hmmm.... talvez a resposta seja um número menor?";
   }
 }
