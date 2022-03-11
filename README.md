@@ -1,3 +1,6 @@
-# Mentalista - ID3
+# ImersãoDev Alura
 
-A Pen created on CodePen.io. Original URL: [https://codepen.io/tamiresataide/pen/QWaLBaJ](https://codepen.io/tamiresataide/pen/QWaLBaJ).
+Projetos desenvolvidos durante a imersãoDev promovida pela [Alura](https://www.alura.com.br)
+
+ - [Conversor](./conversor)
+ - [Adivinhação de Números](./mentalista/)
